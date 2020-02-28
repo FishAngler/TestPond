@@ -1,5 +1,5 @@
 # TestPond
-A set of CLIs, SDKs, and packages built with .NET Core for creating a private test farm for Xamarin UI Tests. 
+A set of CLIs, SDKs, and samples built with .NET Core for creating a private test farm using Xamarin.UITest. 
 
 **TestPond** is composed of three layers: the UI Tests, Runner CLI, and Client.
 
