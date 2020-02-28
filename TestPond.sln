@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPond.Runner", "TestPond.Runner\TestPond.Runner.csproj", "{BA8D300D-A618-4A9B-AC0A-8B64213F8474}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA8D300D-A618-4A9B-AC0A-8B64213F8474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8D300D-A618-4A9B-AC0A-8B64213F8474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8D300D-A618-4A9B-AC0A-8B64213F8474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8D300D-A618-4A9B-AC0A-8B64213F8474}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
