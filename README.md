@@ -31,16 +31,17 @@ If you are running this in your development machine configured to run Xamarin, t
 * JAVA_HOME Environmental Variable pointing to the JDK home directory
 * ANDROID_HOME Environment Variable pointing to the Android SDK directory
 
-# How to execute my tests?
-`Pre-requisite: Modify your Xamarin.UI Test Launch Configuation to use the "IntalledApp()" app approach:
+# How do I execute my UI Tests using the TestPond Runner ?
+**Pre-requisite:** Modify your Xamarin.UI Test Launch Configuation to use the "InstalledApp()" app approach:
 
-iOS example: (coming soon)
+`iOS example: (coming soon)`
 
-Android example: (coming soon)`
+`Android example: (coming soon)`
 
+**Sample Test Pond Arguments**
 `TestPond.Runner -lp path/to/packagedapp -dp android -di 9A221FFBA005EZ -apn your.app.name.apk -dlln UI.Tests.dll`
 
-### Arguments
+### Complete Argument List
 ```
 -lp|--local-path: [Required] Local path to where the application package and ui test dll live.
 -dp|--device-platform: [Required] The device platform to run: 'a' for Android or 'i' for iOS.
