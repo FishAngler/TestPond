@@ -12,7 +12,7 @@ The Runner layer is a CLI tool that interfaces with NUnit to execute the UI Test
 
 ### Client
 This is an optional layer that you can create based on your current configuration and requirements. You can create a GUI App or a CLI to interface with your chosen CI tool/service to automate the downloads of your builds and execute the UI Test in multiple connected phones at the same time through the Runner CLI.
-At FishAngler we created an interactive Command Line tool that prompts the user which build to download from Azure Dev Ops, which phones to run it on, and which tests to execute. Furhermore, it parses all the results into a sumarry HTML report to quickly look at each run. We call it the *Creator* and we will be publishing the code as an example.
+At FishAngler we created an interactive Command Line tool that prompts the user which build to download from Azure Dev Ops, which phones to run it on, and which tests to execute. Furthermore, it parses all the results into a sumarry HTML report to quickly look at each run. We call it the *Creator* and we will be publishing the code as an example.
 
 # Dependencies
 If you are running this in your development machine configured to run Xamarin, then most likely you already have most of the dependencies.
