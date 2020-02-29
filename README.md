@@ -32,7 +32,7 @@ If you are running this in your development machine configured to run Xamarin, t
 * ANDROID_HOME Environment Variable pointing to the Android SDK directory
 
 # How do I execute my UI Tests using the TestPond Runner ?
-**Pre-requisite:** Modify your Xamarin.UI Test Launch Configuation to use the "InstalledApp()" app approach:
+**Pre-requisite:** Modify your Xamarin.UI Test Launch Configuration to use the "InstalledApp()" app approach:
 
 `iOS example: (coming soon)`
 
