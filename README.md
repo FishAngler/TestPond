@@ -1,24 +1,24 @@
 # TestPond
 A set of CLIs, SDKs, and samples built with .NET Core for creating a private test farm using Xamarin.UITest. 
 
-**TestPond** is composed of three layers: the UI Tests, Runner CLI, and Client.
+**TestPond** is composed of three layers: the UI Test DLL (NUnit + Xamarin.UITest), Runner CLI, and Client.
 
-### UI Tests
-This layer is your own UI Tests built against your app using Xamarin UI Tests. To get started building UI Tests you can read the [Microsoft documentation](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/).
+### UI Test DLL
+This layer is your UI Test DLL (NUnit + Xamarin.UITest). To get started building UI Tests you can read the [Microsoft documentation](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/).
 Due to limitations within the Xamarin UI Framework, you might have to perform some "manual" cleanup after the execution of each test.
 
 ### Runner
-The Runner layer is a CLI tool that interfaces with NUnit to execute the UI Test without the dependency of an IDE. This allows you to automate the execution of UI Tests.
+The Runner layer is a CLI tool that interfaces with NUnit to execute the UI Test without the dependency of an IDE. This allows you to automate the execution of  your UI Test DLL.
 
 ### Client
 This is an optional layer that you can create based on your current configuration and requirements. You can create a GUI App or a CLI to interface with your chosen CI tool/service to automate the downloads of your builds and execute the UI Test in multiple connected phones at the same time through the Runner CLI.
 At FishAngler we created an interactive Command Line tool that prompts the user which build to download from Azure Dev Ops, which phones to run it on, and which tests to execute. Furthermore, it parses all the results into a sumarry HTML report to quickly look at each run. We call it the *Creator* and we will be publishing the code as an example.
 
 # Dependencies
-If you are running this in your development machine configured to run Xamarin, then most likely you already have most of the dependencies.
+If you are running this in your development machine configured to run Xamarin, then most likely you already have most of the platform-specific dependencies.
 
 ### General
-* NUnit 3 Console 
+* NUnit 3 Console Runner 
 
 ### For iOS Testing
 * xcrun (part of XCode, but you [can install without xcode](https://mac-how-to.gadgethacks.com/how-to/install-command-line-developer-tools-without-xcode-0168115/). **Warning, this was not tested**)
@@ -27,11 +27,17 @@ If you are running this in your development machine configured to run Xamarin, t
 ### For Android Testing
 * Android SDK
 * Java SDK
-* adb must be in the path
+* adb - must be configured with a path variable
 * JAVA_HOME Environmental Variable pointing to the JDK home directory
 * ANDROID_HOME Environment Variable pointing to the Android SDK directory
 
 # How to execute my tests?
+`Pre-requisite: Modify your Xamarin.UI Test Launch Configuation to use the "IntalledApp()" app approach:
+
+iOS example: (coming soon)
+
+Android example: (coming soon)`
+
 `TestPond.Runner -lp path/to/packagedapp -dp android -di 9A221FFBA005EZ -apn your.app.name.apk -dlln UI.Tests.dll`
 
 ### Arguments
